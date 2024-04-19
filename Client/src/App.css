@@ -1,0 +1,30 @@
+.csvModification {
+  width: 33.33333%;
+}
+
+@media only screen and (max-width: 768px) {
+  .outputPage {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    /* padding: 2px; */
+
+  }
+  .csvModification {
+    width: fit-content;
+  }
+  .keyupdate {
+    width: 1/2;
+    margin: 10px;
+  }
+  .taskBar{
+    justify-content: center;
+    text-align: center;
+
+  }
+  .downButton{
+    width: 33.33333%;
+    padding: 0px;
+  }
+}

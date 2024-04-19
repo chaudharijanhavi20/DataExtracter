@@ -1,0 +1,42 @@
+.info{
+    display: block; 
+ }
+ .home{
+     display: block;
+ }
+
+ .animateCross {
+    animation: animateCross 0.2s ease-in forwards;
+  }
+  
+  @keyframes animateCross {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(90deg);
+    }
+  }
+ 
+ @media (max-width:767px){
+     .info{
+         display: none;
+     }
+     .home{
+         overflow-x: scroll;
+     }
+     .logo{
+         padding-left: 10px;
+     }
+     .navBar{
+        padding-left: 30px;
+     }
+     .auth{
+        display: none;
+     }
+
+    .heroText{
+        font-size: x-small;
+     }
+ }
+ 

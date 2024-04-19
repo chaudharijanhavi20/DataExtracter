@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+** {
+    scrollbar-width: auto;
+    scrollbar-color: #2f82ee #ffffff;
+  }
+  
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: none;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background: #00cea8;
+    background: linear-gradient(90deg, #00cea8 0%, rgba(60, 51, 80, 0) 100%);
+    background: -webkit-linear-gradient(
+      90deg,
+      #00cea8 0%,
+      rgba(60, 51, 80, 0) 100%
+    );
+    border-radius: 7px;
+  }

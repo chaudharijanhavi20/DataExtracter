@@ -3,6 +3,7 @@ import { Popover, Transition } from "@headlessui/react";
 // import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Fragment } from "react";
 import "./Home.css";
+import { Link } from "react-router-dom";
 import { driver } from "driver.js";
 import "driver.js/dist/driver.css";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -102,13 +103,13 @@ const Navbar = () => {
           <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
             <ul class="flex flex-col font-medium p-4 md:p-0 mt-4   rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0  ">
               <li>
-                <a
+                <Link to="/"
                   href="#"
                   class="block py-2 px-3 text-white rounded md:bg-transparent hover:text-blue-700 md:text-white md:p-0 "
                   aria-current="page"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
                 <Popover className="relative">
@@ -181,12 +182,12 @@ const Navbar = () => {
                 </Popover>
               </li>
               <li>
-                <a
+                <Link to="/pdfData"
                   href="#"
                   class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white "
                 >
-                  Services
-                </a>
+                  Large Documents
+                </Link>
               </li>
               <li>
                 <a
@@ -237,18 +238,18 @@ const Navbar = () => {
           }
           id="example-navbar-danger"
         >
-          <a
+          <Link to="/"
            
             href="#"
             className="py-2 text-xl"
             onClick={toggleMenu}
           >
             Home
-          </a>
+          </Link>
 
-          <a href="#" className="py-2 text-xl" onClick={toggleMenu}>
-            Services
-          </a>
+          <Link to="/pdfData" href="#" className="py-2 text-xl" onClick={toggleMenu}>
+            Large Documents
+          </Link>
           <a  onClick={startTour} href="#" className="py-2 text-xl" >
             Tour
           </a>

@@ -87,10 +87,11 @@ const PDFDataExtract = () => {
 
   return (
     <>
+    <Navbar/>
     <div className="jsonData flex flex-row">
     <div className="w-full  items-center justify-center content-center p-4 mt-3">
       <h1 className="text-center font-bold text-2xl mb-3">DATA IN JSON FORMAT</h1>
-      <input type="file" accept="application/pdf" className="" onChange={extractText} />
+      <input type="file" accept="application/pdf" onChange={extractText} />
       <div className="codeSnippet w-full h-auto border bg-black ">
         <div className="copyButton text-white flex justify-between bg-blue-200 p-3 top-0 ">
           <h1 className="text-black font-bold">JSON</h1>
